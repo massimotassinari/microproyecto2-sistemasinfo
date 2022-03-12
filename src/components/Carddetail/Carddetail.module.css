@@ -1,0 +1,26 @@
+.Media {
+  background-color: rgb(209, 49, 49);
+  padding: 1rem;
+  position: relative;
+  margin: 1rem auto;
+}
+
+.Image {
+  height: 30rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Titulo {
+  background-color: aqua;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.Idioma {
+  background-color: bisque;
+
+  font-size: 2rem;
+  text-align: center;
+}

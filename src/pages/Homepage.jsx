@@ -5,6 +5,8 @@ import Title from '../components/Title' //Asi llamo a los componentes, si estan 
 //Aqui es una funcion, o componente que tiene un return de html ajuro para que react lo denderice
 import {useState} from "react"
 import { useEffect } from 'react';
+import Moviecard from '../components/Moviecard/moviecard';
+import Navbar from '../components/Navbar/Navbar';
 
 export default function Homepage() {
   
@@ -18,18 +20,20 @@ export default function Homepage() {
   
   return (
     <div>
+      <Navbar/>
 
-<Title color="red" fontSize="40px"/>
+
+
+
+      <Title color="red" fontSize="40px"/>
       <Title color="blue" fontSize="60px" centered={true}/>
 
+      <Moviecard titulo={"maria maria"} idioma={"español"} urlimagen={"https://es.web.img3.acsta.net/pictures/19/09/03/16/58/5053583.jpg"} popularidad={"7/10"}/>
+
+      
+
      
-      <button onClick={()=>{
-        setCounter(counter+1);
-        
-
-
-
-      }}>Counter:{counter}</button>
+      
 
 
 
@@ -37,3 +41,11 @@ export default function Homepage() {
     </div>
   )
 }
+
+//<button onClick={()=>{
+ // setCounter(counter+1);
+        
+
+
+
+//}}>Counter:{counter}</button>

@@ -6,6 +6,7 @@ import Listado from './pages/Listado';
 import Detalles from './pages/Detalles';
 import Login from './pages/Login';
 import Registro from './pages/Registro';
+import MovieAPI from './pages/MovieAPI';
 
 const Page404 = ()=> <h1>Page 404 Error</h1>
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/detalles" element={<Detalles/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/registro" element={<Registro/>}/>
+        <Route path="/movieAPI" element={<MovieAPI/>}/>
         <Route path="/*" element={<Page404/>}/>
         
       
