@@ -1,54 +1,36 @@
 //En el app va absolutamente todooooooooo los componentes
-import logo from './assets/logo.svg' //las fotos se importan como si fueran un componente
 import './App.css'
-import Title from './components/Title' //Asi llamo a los componentes, si estan bien hechos se autocompleta la direccion
-//Aqui es una funcion, o componente que tiene un return de html ajuro para que react lo denderice
-import {useState} from "react"
-import { useEffect } from 'react';
+import {BrowserRouter as Router, Routes,Route } from "react-router-dom";
+import Homepage from './pages/Homepage';
+import Listado from './pages/Listado';
+import Detalles from './pages/Detalles';
+import Login from './pages/Login';
+import Registro from './pages/Registro';
+
+const Page404 = ()=> <h1>Page 404 Error</h1>
 
 function App() {
   
 
-  const [counter, setCounter] = useState(0);
 
-  useEffect(()=>{
-    console.log(counter);
+  return <Router>
+      <Routes>
 
-  },[counter]);
-
-  return (
-    <div className="App">
-      <Title color="red" fontSize="40px"/>
-      <Title color="blue" fontSize="60px" centered={true}/>
-
+        <Route path="/" element={<Homepage />}/>
+        <Route path='/listado' element={<Listado/>}/>
+        <Route path="/detalles" element={<Detalles/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/registro" element={<Registro/>}/>
+        <Route path="/*" element={<Page404/>}/>
+        
+      
      
-      <button onClick={()=>{
-        setCounter(counter+1);
         
 
-
-
-      }}>Counter:{counter}</button>
-
-
-
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-        <h1>holas</h1>
-        
-        </p>
-        <p>
-          <button type="button">
-            count is: 0 
-          </button>
-        </p>
-        
-        
-      </header>
-    </div>
-  )
+      </Routes>
+      
+    </Router>
+  
 }
 //Este export default me permite importar en optro documento, es importante para el rendwer
 export default App
