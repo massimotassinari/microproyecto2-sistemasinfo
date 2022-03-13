@@ -18,7 +18,7 @@ function Title({color,centered,fontSize}) {
         color: color,
         fontSize: fontSize,
         textAlign: centered ? "center" : "left",
-    }}>Un titulito pa probar</h2>
+    }}>PELICULAS</h2>
   )
 }
 

@@ -24,10 +24,6 @@ function App() {
         <Route path="/registro" element={<Registro/>}/>
         <Route path="/movieAPI" element={<MovieAPI/>}/>
         <Route path="/*" element={<Page404/>}/>
-        
-      
-     
-        
 
       </Routes>
       

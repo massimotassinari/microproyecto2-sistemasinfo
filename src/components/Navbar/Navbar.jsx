@@ -1,17 +1,33 @@
 import React from 'react'
-import styles from  "./Navbar.module.css" //Importar el css
+import styles from "./Navbar.module.css"
+import {BrowserRouter as Router, Routes,Route, Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div>
-        <nav>
-        <button class="nav-button" onclick="action()">Menu</button>
-        <a href="./" class="nav-enlace desaparecer">Home</a>
-        <a href="./Login" class="nav-enlace desaparecer">Login</a>
-        <a href="./Registro" class="nav-enlace desaparecer">Registro</a>
-        <a href="./Listado" class="nav-enlace desaparecer">Peliculas</a>
-        
-      </nav>
+        <div className = {styles.navbar}>
+        <div className = {styles.nav}>
+            <p className={styles.titulo}>Cartelera Caracas</p>
+            <div className = {styles.items}>
+            <Link to="/" className={styles.item}>
+              Home
+            </Link>
+            
+            <Link to="/registro" className={styles.item}>
+              Register
+            </Link>
+
+            <Link to="/login" className={styles.item}>
+              Login
+            </Link>
+
+            <Link to="/listado" className={styles.item}>
+              Listado
+            </Link>
+
+            </div>
+        </div>
+    </div>
     </div>
   )
 }
