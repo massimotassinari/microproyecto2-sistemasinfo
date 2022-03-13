@@ -1,6 +1,7 @@
 import React from 'react'
 import Carddetail from '../components/Carddetail/carddetail';
 import Navbar from '../components/Navbar/Navbar';
+
 export default function Detalles() {
   return(
       <div>
