@@ -1,26 +1,60 @@
 .Media {
-  background-color: rgb(209, 49, 49);
-  padding: 1rem;
-  position: relative;
-  margin: 1rem auto;
+  clear: both;
+    color: #001219;
+    justify-content:center;
+    align-items: center;
+    display: block;
+    background-color: white;
+    width: 250px;
+    max-width: 100%;
+    margin-top: 60px;
+    padding: 40px;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 20px;
+    margin: 30px;
+    grid-area: auto;
+    box-shadow: 0 0 15px 1px #b7b7a4;
+}
+
+.todo{
+    margin:0;
+    display: inline-block;
+    align-items: center;
+    justify-content:center;
 }
 
 .Image {
-  height: 30rem;
+  width: 8em;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  border-radius: 0.5em;
+  border-color: #001219;
 }
 
 .Titulo {
-  background-color: aqua;
-  font-size: 3rem;
+
+  font-size: 1.2rem;
   text-align: center;
 }
 
 .Idioma {
-  background-color: bisque;
 
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
+}
+
+.Button{
+  align-items: center;
+}
+
+.Buttong{
+  margin:0;
+  display: inline-block;
+  align-items: center;
+  justify-content:center;
+  font-size: large;
+  padding-left: 25em;
+  padding-bottom: 2em;
 }
