@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import Registro from './pages/Registro';
 import MovieAPI from './pages/MovieAPI';
 import Navbar from './components/Navbar/Navbar';
+import UserContextProvider from "./context/UserContext";
 
 const Page404 = ()=> <h1>Page 404 Error</h1>
 
@@ -16,7 +17,7 @@ function App() {
 
 
   return <Router>
-    
+    <UserContextProvider>
     <Navbar/>
       <Routes>
 
@@ -29,7 +30,7 @@ function App() {
         <Route path="/*" element={<Page404/>}/>
 
       </Routes>
-      
+      </UserContextProvider>
       
     </Router>
   

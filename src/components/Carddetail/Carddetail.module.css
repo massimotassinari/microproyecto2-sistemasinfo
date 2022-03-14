@@ -1,32 +1,30 @@
 .Media {
   clear: both;
-    color: #001219;
-    justify-content:center;
-    align-items: center;
-    display: block;
-    background-color: white;
-    width: 250px;
-    max-width: 100%;
-    margin-top: 60px;
-    padding: 40px;
-    position: relative;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 20px;
-    margin: 30px;
-    grid-area: auto;
-    box-shadow: 0 0 15px 1px #b7b7a4;
+  color: #001219;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  background-color: white;
+  width: 52rem;
+  max-width: 100%;
+  margin-top: 60px;
+  padding: 40px;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 20px;
+  margin: 30px;
+  grid-area: auto;
+  box-shadow: 0 0 15px 1px #b7b7a4;
 }
 
-.todo{
-    margin:0;
-    display: inline-block;
-    align-items: center;
-    justify-content:center;
+.todo {
+  display: flex;
+  justify-content: center;
 }
 
 .Image {
-  width: 8em;
+  width: 20em;
   display: block;
   margin: auto;
   border-radius: 0.5em;
@@ -34,26 +32,24 @@
 }
 
 .Titulo {
-
-  font-size: 1.2rem;
+  font-size: 3rem;
   text-align: center;
 }
 
 .Idioma {
-
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: center;
 }
 
-.Button{
+.Button {
   align-items: center;
 }
 
-.Buttong{
-  margin:0;
+.Buttong {
+  margin: 0;
   display: inline-block;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   font-size: large;
   padding-left: 25em;
   padding-bottom: 2em;

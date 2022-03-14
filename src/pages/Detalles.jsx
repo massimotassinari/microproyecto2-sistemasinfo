@@ -12,7 +12,7 @@ export default function Detalles() {
     <div>
       
       <Title color="black" fontSize="60px" centered={true}/>
-      <Carddetail titulo={"Terminator"} idioma={"español"} urlimagen={"https://es.web.img3.acsta.net/pictures/19/09/03/16/58/5053583.jpg"} popularidad={"7/10"} genero={"accion"} presupuesto={"10M"} descripcion={"Un bicho malisimo"} fecha={"12/21/34"} estado={"Disponible"} />
+      <Carddetail titulo={"Spider-Man: No Way Home"} idioma={" Español"} urlimagen={"http://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"} popularidad={" 8.3"} genero={" Accion"} presupuesto={" 100 M"} descripcion={" Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man."} fecha={" 2021-12-15"} estado={" Estrenada"} />
             
       <div>
       <Link to="/listado" className={styles.Buttong}>Listado Completo de peliculas</Link>

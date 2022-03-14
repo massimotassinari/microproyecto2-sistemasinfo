@@ -22,7 +22,7 @@ export default function Registro() {
   return (
     <div className="container">
       <form id="addNewTransactionForm" onSubmit={handleSubmit(onSubmit)}>
-        <h2>Add new transaction</h2>
+        <h2>Registrate</h2>
 
         <label>
           <span>Username</span>
